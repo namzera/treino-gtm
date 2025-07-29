@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Minha Página de Treino GTM</title>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-K36XXLVR');</script>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 50px; }
+        button { padding: 10px 20px; font-size: 16px; cursor: pointer; }
+        .conteudo { margin-top: 30px; padding: 20px; border: 1px solid #ccc; }
+    </style>
+</head>
+<body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <h1>Bem-vindo ao Treino de GTM!</h1>
+    <p>Esta é uma página local para você praticar.</p>
+
+    <button id="botaoCliqueAqui">Clique em Mim</button>
+
+    <div class="conteudo">
+        <h2>Algum Conteúdo Interativo</h2>
+        <p>Role a página para simular eventos de scroll.</p>
+        <p>Qualquer interação aqui pode ser rastreada.</p>
+    </div>
+
+    <script>
+        // Exemplo de como simular um evento Data Layer push
+        document.getElementById('botaoCliqueAqui').addEventListener('click', function() {
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+                'event': 'botao_clicado',
+                'categoria_botao': 'interacao_geral',
+                'texto_botao': 'Clique em Mim'
+            });
+            console.log('Evento "botao_clicado" enviado para o Data Layer.');
+        });
+    </script>
+</body>
+</html>
